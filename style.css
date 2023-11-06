@@ -1,0 +1,185 @@
+
+/* Estilos para el fondo oscuro */
+body {
+    background-color: #000;
+    /* Color de fondo oscuro */
+    color: #fff;
+    /* Color de texto blanco */
+}
+
+/* Estilos para la tabla de precios */
+#tabla-precios {
+background-color: rgba(0, 0, 0, 0.5);
+/* Color de fondo semitransparente */
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+/* Sombra suave */
+margin: 20px auto;
+padding: 20px;
+width: 80%;
+font-family: 'Raleway Dots', sans-serif;
+/* Agregamos el efecto de neón a los bordes de la tabla */
+border: 2px solid transparent;
+animation: neon-border 5s infinite alternate;
+}
+
+/* Animación de luz de neón para los bordes de la tabla */
+@keyframes neon-border {
+0% {
+border-color: #FF0000;
+}
+25% {
+border-color: #00FF00;
+}
+50% {
+border-color: #0000FF;
+}
+75% {
+border-color: #FFFF00;
+}
+100% {
+border-color: #FF00FF;
+}
+}
+
+/* Estilos para las filas de la tabla */
+#tabla-precios tr {
+    padding: 10px;
+    /* Espaciado interior entre celdas */
+    margin-bottom: 10px;
+    /* Espaciado inferior entre filas */
+    
+}
+
+ /* Estilos para el botón */
+
+ #actualizar-btn {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Botón circular */
+    padding: 15px; /* Espaciado interno */
+    position: fixed; /* Fijar posición */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    z-index: 9999; /* Colocar encima de todo */
+    transition: background-color 0.3s; /* Transición para el color de fondo */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    /* Sombra con color RGB (rojo) */
+}
+
+/* Estilos para el icono del botón */
+#actualizar-icono {
+    font-size: 24px; /* Tamaño del icono */
+}
+
+/* Animación de luz de neón con color RGB */
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+    25% {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 0, 255, 0.8);
+    }
+    75% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    }
+}
+
+/* Agrega la animación de luz de neón al botón */
+.neon-button {
+    animation: neon-glow 1s infinite alternate;
+}
+/* Estilo para el botón cuando se presiona */
+#actualizar-btn:active {
+    background-color: #0056b3;
+    /* Cambia el color de fondo cuando se presiona */
+}
+
+/* Animación de luz de neón */
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF, 0 0 30px #007BFF;
+    }
+    100% {
+        box-shadow: 0 0 20px #007BFF, 0 0 40px #007BFF, 0 0 60px #007BFF;
+    }
+}
+
+/* Agrega la animación de luz de neón al botón */
+.neon-button {
+    animation: neon-glow 5s infinite alternate;
+}
+/* Modo Claro */
+body {
+background-color: #fff;
+color: #333;
+}
+
+#tabla-precios {
+background-color: #f4f4f4;
+/* Otros estilos para el modo claro */
+}
+
+/* Modo Oscuro */
+@media (prefers-color-scheme: dark) {
+body {
+background-color: #000;
+color: #fff;
+}
+
+#tabla-precios {
+background-color: rgba(0, 0, 0, 0.5);
+/* Otros estilos para el modo oscuro */
+}
+/* Tamaño de fuente base para dispositivos móviles */
+body {
+font-size: 16px;
+}
+
+/* Cambia el tamaño de fuente para dispositivos más grandes */
+@media screen and (min-width: 768px) {
+body {
+font-size: 30px;
+}
+}
+/* Estilos generales para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+/* Aplica estilos específicos para pantallas con ancho máximo de 768px */
+body {
+font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+}
+#tabla-precios {
+width: 100%; /* Haz que la tabla ocupe todo el ancho de la pantalla */
+font-size: 14px; /* Ajusta el tamaño de fuente de la tabla */
+}
+/* Otros estilos específicos para dispositivos móviles */
+}
+
+/* Aplica negrita (bold) a la columna "Tipo de arreglo", excluyendo el encabezado */
+#tabla-precios tbody td:first-child {
+font-weight: bold;
+}
+/* Estilo para el contenedor de la tabla */
+#tabla-container {
+margin-bottom: 60px; /* Margen inferior para dejar espacio al botón */
+}
+
+/* Estilos para el botón */
+#actualizar-btn {
+/* Otros estilos del botón */
+position: fixed;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+/* Resto de estilos aquí */
+}
+}
